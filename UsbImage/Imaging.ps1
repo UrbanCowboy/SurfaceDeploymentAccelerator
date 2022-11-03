@@ -544,6 +544,6 @@ Else
     Exit
 }#>
 
-Write-Output "Restarting..."
+Write-Output "Rebooting..."
 Start-Sleep -Seconds 10
 Restart-Computer -Force
