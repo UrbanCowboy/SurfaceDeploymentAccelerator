@@ -47,7 +47,7 @@
 
 
 $SDAVersion = "1.3.0.0"
-cls
+Clear-Host
 
 
 
@@ -518,11 +518,12 @@ Copy-Item -Path "W:\Windows\System32\Recovery\WinRE.wim" -Destination $WinREPath
 $reagentc = "W:\Windows\System32\reagentc.exe"
 & $reagentc /setreimage /path $WinREWIM /target W:\Windows
 Write-Output ""
-Sleep 2
+Start-Sleep 2
 
 
 # Use MessageBox to prompt for reboot
-Write-Output "Restart prompt..."
+#Commented out the messagebox to have the device reboot without input
+<#Write-Output "Restart prompt..."
 [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") | Out-Null
 $result = [System.Windows.Forms.MessageBox]::Show("Reboot?", $PromptString, 'YesNo')
 If ( $result -eq 'No' )
@@ -541,4 +542,8 @@ Else
 {
     Restart-Computer -Force
     Exit
-}
+}#>
+
+Write-Output "Restarting..."
+Start-Sleep -Seconds 10
+Restart-Computer -Force
