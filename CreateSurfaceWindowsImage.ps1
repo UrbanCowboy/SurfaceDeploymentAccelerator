@@ -166,9 +166,9 @@ Param(
     [Parameter(
         Position=11,
         Mandatory=$False,
-        HelpMessage="Add Office 365 C2R (bool true/false, default is true)"
+        HelpMessage="Add Office 365 C2R (bool true/false, default is false)"
         )]
-        [bool]$Office365 = $True,
+        [bool]$Office365 = $False,
 
     [Parameter(
         Position=12,
@@ -181,9 +181,9 @@ Param(
     [Parameter(
         Position=13,
         Mandatory=$False,
-        HelpMessage="Create USB key when finished (bool true/false, default is true)"
+        HelpMessage="Create USB key when finished (bool true/false, default is false)"
         )]
-        [bool]$CreateUSB = $True,
+        [bool]$CreateUSB = $False,
 
     [Parameter(
         Position=14,
