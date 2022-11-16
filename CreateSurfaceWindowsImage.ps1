@@ -3654,35 +3654,35 @@ If ($ServicingStack -eq $True)
     Get-ServicingStackUpdates -TempFolder $TempFolder
 }
 
-PAUSE
+Start-Sleep -S 5
 
 If ($CumulativeUpdate -eq $True)
 {
     Get-CumulativeUpdates -TempFolder $TempFolder
 }
 
-PAUSE
+Start-Sleep -S 5
 
 If ($DotNet35 -eq $True)
 {
     Get-CumulativeDotNetUpdates -TempFolder $TempFolder
 }
 
-PAUSE
+Start-Sleep -S 5
 
 If ($AdobeFlashUpdate -eq $True)
 {
 	Get-AdobeFlashUpdates -TempFolder $TempFolder
 }
 
-PAUSE
+Start-Sleep -S 5
 
 If ($OOBUpdate -eq $True)
 {
 	Get-OOBUpdates -TempFolder $TempFolder
 }
 
-PAUSE
+Start-Sleep -S 5
 
 
 # Add Servicing Stack / Cumulative updates and necessary drivers to install.wim, winre.wim, and boot.wim
