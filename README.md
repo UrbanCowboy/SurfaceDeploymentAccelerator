@@ -76,13 +76,13 @@ The parameters that are supported to configure for the script are as follows:
  
  -AdobeFlashUpdate:           Include latest Adobe Flash Player Security update, True or False.  True is the default.
  
- -Office365:                  Download and install the latest monthly C2R installation of Office 365, True or False.  True is the default.
+ -Office365:                  Download and install the latest monthly C2R installation of Office 365, True or False.  False is the default.
  
  -Device:                     Enter Surface device type to download and inject latest drivers for.  Possible values: SurfacePro4, SurfacePro5, SurfacePro6, SurfacePro7, SurfacePro7Plus, SurfacePro8, SurfaceLaptop, SurfaceLaptop2, SurfaceLaptop3Intel, SurfaceLaptop3AMD, SurfaceLaptop4Intel, SurfaceLaptop4AMD, SurfaceLaptopGo, SurfaceLaptopStudio, SurfaceBook, SurfaceBook2, SurfaceBook3, SurfaceStudio, SurfaceStudio2, SurfaceGo, SurfaceGoLTE, SurfaceGo2, SurfaceGo3, SurfaceHub2, and Custom.  If this parameter is not specified, SurfacePro8 is used.
 
- -CreateUSB:                  Create bootable USB installation when finished, True or False.  True is the default.
+ -CreateUSB:                  Create bootable USB installation when finished, True or False.  False is the default.
 
- -CreateISO:                  Create bootable ISO file when finished, True or False.  False is the default.  This is useful for making imaging/scripting changes and testing quickly without needing USB keys and/or hardware to test.
+ -CreateISO:                  Create bootable ISO file when finished, True or False.  True is the default.  This is useful for making imaging/scripting changes and testing quickly without needing USB keys and/or hardware to test.
 
  -WindowsKitInstall:          Enter target location of Windows ADK installation.  If not specified, the path "${env:ProgramFiles(x86)}\Windows Kits\10\Assessment and Deployment Kit" will be used.
 
